@@ -1,0 +1,57 @@
+body{
+    background-color:antiquewhite;
+}
+img{
+    width: 200px;
+}
+td img{
+    width: 35px;
+}
+table{
+    position: fixed;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+th{
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 20pt;
+}
+td{
+    border-bottom: 1px solid black;
+    height: 40px;
+    font-size: 15pt;
+    font-weight: 500;
+}
+#tblPts{
+    border-left: 1px solid black;
+}
+#keptDice{
+    position: fixed;
+    left: 550px;
+    height: auto;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    width: auto;
+}
+#keptDice img{
+    width: 50px;
+    margin: 3px;
+}
+#activeDice{
+    position: fixed;
+    left: 550px;
+    top: 400px;
+    height: auto;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    width: auto;
+}
+#activeDice img{
+    width: 80px;
+}
+.picked{
+    background-color: rgba(112, 108, 103, 0.205);
+}
