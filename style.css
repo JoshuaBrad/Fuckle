@@ -1,5 +1,23 @@
-body{
-    background-color:antiquewhite;
+:root{
+    --boxCol: rgba(250, 235, 215, 0.45);
+    --backCol: 25;
+    --backOpacity:0.6;
+    --backGrad: rgba(var(--backCol), var(--backCol), var(--backCol), var(--backOpacity));
+    --textCol: #2e1f14;
+}
+
+html,body{
+     min-height: 100vh; /* Ensure full height for background */
+    margin: 0; /* Prevent margin gaps */
+    
+    background-image: 
+        linear-gradient(var(--backGrad), var(--backGrad)),
+        url('images/wood.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+    background-position: center, center;
+    background-attachment: fixed;
+    color: var(--textCol);
 }
 img{
     width: 200px;
@@ -9,31 +27,37 @@ td img{
 }
 table{
     position: fixed;
-    border: 3px solid black;
+    border: 3px solid #2e1f14;
     border-radius: 10px;
+    background-color:var(--boxCol);
 }
 th{
-    border: 2px solid black;
+    border: 2px solid #2e1f14;
     border-radius: 5px;
     font-size: 20pt;
 }
 td{
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #2e1f14;
     height: 40px;
     font-size: 15pt;
     font-weight: 500;
 }
 #tblPts{
-    border-left: 1px solid black;
+    border-left: 1px solid #2e1f14;
 }
 #keptDice{
     position: fixed;
     left: 550px;
     height: auto;
-    border: 3px solid black;
+    border: 3px solid #2e1f14;
     border-radius: 10px;
     padding: 10px;
     width: auto;
+    background-color:var(--boxCol);
+}
+#legend{
+position: fixed;
+    left: 550px;
 }
 #keptDice img{
     width: 50px;
@@ -44,14 +68,27 @@ td{
     left: 550px;
     top: 400px;
     height: auto;
-    border: 3px solid black;
+    border: 3px solid #2e1f14;
     border-radius: 10px;
     padding: 10px;
     width: auto;
+    background-color:var(--boxCol);
 }
 #activeDice img{
     width: 80px;
 }
 .picked{
     background-color: rgba(112, 108, 103, 0.205);
+}
+#score{
+    position: fixed;
+    font-size: 30pt;
+    left: 550px;
+    top: 650px;
+    height: auto;
+    border: 3px solid #2e1f14;
+    border-radius: 10px;
+    padding: 10px;
+    width: auto;
+    background-color:var(--boxCol);
 }

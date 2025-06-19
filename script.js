@@ -1,7 +1,12 @@
 var numKept = 0;
 function random(){
+    
     let diceImg = document.getElementById("activeDice");
+    diceImg.innerHTML="<legend>Active</legend>"
     let keptContent="";
+    if(numKept == 6){
+        numKept = 0;
+    }
     for(let i = 0; i < (6-numKept); i++){
     let diceToShow = (Math.floor(Math.random()*6)+1);
     switch (diceToShow){
@@ -25,13 +30,32 @@ function random(){
             break;
     }
 }
-diceImg.innerHTML = keptContent;
+diceImg.innerHTML += keptContent;
 }
 
 function keepDice(diceVal, content){
     content.classList.add("picked");
     content.onclick = null;
     numKept++;
-    let dicekept = document.getElementById("keptDice");
-    dicekept.innerHTML = content;
+    let diceKept = document.getElementById("keptDice");
+    switch(diceVal){
+        case 1:
+            diceKept.innerHTML+='<img src="images/one.png">';
+            break;
+        case 2:
+            diceKept.innerHTML+='<img src="images/two.png">';
+            break;
+        case 3:
+            diceKept.innerHTML+= '<img src="images/three.png">';
+            break;
+        case 4:
+            diceKept.innerHTML+= '<img src="images/four.png">';
+            break;
+        case 5:
+            diceKept.innerHTML+='<img src="images/five.png">';
+            break;
+        case 6:
+            diceKept.innerHTML+= '<img src="images/six.png">';
+            break;
+    }
 }
