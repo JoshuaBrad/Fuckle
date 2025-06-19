@@ -1,7 +1,7 @@
 :root{
     --boxCol: rgba(250, 235, 215, 0.45);
     --backCol: 25;
-    --backOpacity:0.6;
+    --backOpacity:0.3;
     --backGrad: rgba(var(--backCol), var(--backCol), var(--backCol), var(--backOpacity));
     --textCol: #2e1f14;
 }
