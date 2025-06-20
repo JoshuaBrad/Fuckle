@@ -104,8 +104,8 @@ function endTurn(){
 }
 function calcScore(){
 var pts=parseInt(document.getElementById("score").innerText);
-var numPairs;
-var numTriples;
+var numPairs = 0;
+var numTriples = 0;
 
 
 numOnes = ones.length;
