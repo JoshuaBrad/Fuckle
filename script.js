@@ -30,13 +30,7 @@ function throwDice(){
     
     for(let i = 0; i < (6-numKept); i++){
     let diceToShow = (Math.floor(Math.random()*6)+1);
-    if(i==0||i==1){
-        diceToShow = 2;
-    }else if(i==2||i==3){
-        diceToShow=3;
-    }else{
-        diceToShow=4;
-    }
+
     switch (diceToShow){
         case 1:
             keptContent+='<img src="images/one.png" onclick="keepDice(1, this)">';
