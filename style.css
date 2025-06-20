@@ -1,5 +1,6 @@
 :root{
     --boxCol: rgba(250, 235, 215, 0.45);
+    --hoverCol: rgba(109, 98, 83, 0.85);
     --backCol: 25;
     --backOpacity:0.3;
     --backGrad: rgba(var(--backCol), var(--backCol), var(--backCol), var(--backOpacity));
@@ -78,9 +79,9 @@ position: fixed;
     width: 80px;
 }
 .picked{
-    background-color: rgba(112, 108, 103, 0.205);
+    background-color: rgba(68, 62, 54, 0.507);
 }
-#score{
+#scoreBox{
     position: fixed;
     font-size: 30pt;
     left: 550px;
@@ -91,4 +92,27 @@ position: fixed;
     padding: 10px;
     width: auto;
     background-color:var(--boxCol);
+}
+h1{
+    text-align: center;
+    position: fixed;
+    font-size: 15pt;
+    height: auto;
+    border: 3px outset #2e1f14;
+    border-radius: 10px;
+    padding: 10px;
+    width: 110px;
+    background-color:var(--boxCol);
+}
+h1:hover{
+    background-color: var(--hoverCol);
+    border: 3px inset #2e1f14;
+}
+#btnEndTurn{
+    left: 800px;
+    top: 775px;
+}
+#btnThrowDice{
+    left: 950px;
+    top: 775px;
 }
