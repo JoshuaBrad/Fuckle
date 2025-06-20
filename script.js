@@ -171,7 +171,7 @@ if(numFives == 2){
 if(numSixes == 2){
     numPairs ++;
 }
-    console.log("numPairs "+numPairs;
+    console.log("numPairs "+numPairs);
 //Three pairs
 if (numPairs == 3){
     pts += 1500;
