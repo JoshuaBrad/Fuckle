@@ -30,7 +30,13 @@ function throwDice(){
     
     for(let i = 0; i < (6-numKept); i++){
     let diceToShow = (Math.floor(Math.random()*6)+1);
-    
+    if(i==0||i==1){
+        diceToShow = 2;
+    }else if(i==2||i==3){
+        diceToShow=3;
+    }else{
+        diceToShow=4;
+    }
     switch (diceToShow){
         case 1:
             keptContent+='<img src="images/one.png" onclick="keepDice(1, this)">';
@@ -165,6 +171,7 @@ if(numFives == 2){
 if(numSixes == 2){
     numPairs ++;
 }
+    console.log("numPairs "+numPairs;
 //Three pairs
 if (numPairs == 3){
     pts += 1500;
