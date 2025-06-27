@@ -109,10 +109,22 @@ h1:hover{
     border: 3px inset #2e1f14;
 }
 #btnEndTurn{
-    left: 800px;
+    left: 1100px;
     top: 775px;
 }
 #btnThrowDice{
-    left: 950px;
+    left: 1400px;
     top: 775px;
+}
+#turnScoreBox{
+	position: fixed;
+    font-size: 30pt;
+    left: 750px;
+    top: 650px;
+    height: auto;
+    border: 3px solid #2e1f14;
+    border-radius: 10px;
+    padding: 10px;
+    width: auto;
+    background-color:var(--boxCol);
 }
